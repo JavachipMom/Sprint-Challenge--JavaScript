@@ -8,27 +8,56 @@
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
+const dinosaur1 = {
+  name: 'tyrannosaurus',
+  diet: 'carnivorus',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceous'
+};
+
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
+const dinosaur2 = {
+  name: 'stegosaurus',
+  diet: 'herbivorus',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic'
+};
+
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+
+const dinosaur3 = {
+  name: 'velociraptor',
+  diet: 'carnivorous',
+  weight: '15kg',
+  length: '1.8m',
+  period: 'Late Cretaceous'
+};
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(`The infamous ${dinosaur1.name} weighed a whopping ${dinosaur1.weight}!!`);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(`The regular diet of the ${dinosaur3.name} was that of ${dinosaur3.diet}..`);
 
 // How long was a stegosaurus?
-console.log();
+console.log(`The length of the ${dinosaur2.name} is about ${dinosaur2.length}..`);
 
 // What time period did tyrannosaurus live in?
-console.log();
-
+console.log(`The ${dinosaur1.name} lived in the ${dinosaur1.period}..`);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+speak = dinosaur1.name;
+
+dinosaur1.roar = () => {
+  return `The ${this.speak} says RAWERSRARARWERSARARARRRR!`
+};
+console.log(dinosaur1.roar());
+
 
 
 // ==== Arrays ====
