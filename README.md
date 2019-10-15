@@ -46,7 +46,7 @@ Well the first rule of the 'this' keyword is that we know it is a pronoun to use
 
 5. Why do we need super() in an extended class?
 
-
+We need super() in a extended class because it helps call the parent class with the same parameters that passes to the child constructor.. It connects the same way in which we would use the prototype and create() methods..
 
 ## Project Set up
 
